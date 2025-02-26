@@ -7,7 +7,7 @@ This project is designed as a learning experience for myself and others interest
 ## **Table of Contents**
 
 1. [Overview](#project-overview)
-2. [Legal & Ethical Considerations](#legal-and-ethical-considerations)
+2. [Legal & Ethical Considerations](#legal-&-ethical-considerations)
 3. [Required Hardware](#required-hardware)
 4. [Required Software](#required-software)
 5. [Introduction to SDR](#introduction-to-sdr)
