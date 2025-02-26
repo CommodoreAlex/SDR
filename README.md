@@ -114,6 +114,10 @@ Learn more in [ADVANCED.md](advanced.md).
 3. **Comprehensive Guide to SDR Hardware and Software:**  
     This informative video by Tech Minds covers a variety of hardware, receiver add-ons, antenna add-ons, and software that complement the SDR concepts explored in this repository.  
     [Watch the video here](https://www.youtube.com/watch?v=nB6XQSEFwVA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=3)
+	
+4. **Great Scott Gadgets HackRF Lesson's by Michael Ossmann:**
+	This set of instructional set of 11 lessons are very comprehensive, covering an entire outline of tactics, techniques, and procedures relating to SDRs and digital signals processing.
+	[Watch the video here] (https://www.youtube.com/watch?v=BeeSN14JUYU&list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
 
 Feel free to explore more insightful lectures and tutorials for free on YouTube to deepen your understanding and stay inspired!
 
