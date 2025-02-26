@@ -3,12 +3,12 @@
 This project is designed as a learning experience for myself and others interested in working with SDR hardware and software tools to send, receive, and analyze wireless communication signals.
 
 ---
-## Table of Contents
+## **Table of Contents**
 
-1. [Overview](#project-overview)
-2. [Legal & Ethical Considerations](#legal-&-ethical-considerations)
-3. [Required Hardware](#required-hardware)
-4. [Required Software](#required-software)
+1. [Overview](#-project-overview)
+2. [Legal & Ethical Considerations](#%E2%9A%A0%EF%B8%8F-legal--ethical-considerations)
+3. [Required Hardware](#-required-hardware)
+4. [Required Software](#%EF%B8%8F-required-software)
 5. [Introduction to SDR](#introduction-to-sdr)
 6. [Setting Up SDR Hardware & Software](#setting-up-sdr-hardware--software)
 7. [Receiving and Analyzing Signals](#receiving-and-analyzing-signals)
