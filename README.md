@@ -3,21 +3,22 @@
 This project is designed as a learning experience for myself and others interested in working with SDR hardware and software tools to send, receive, and analyze wireless communication signals.
 
 ---
+
 ## **Table of Contents**
 
-1. [Overview](#-project-overview)
-2. [Legal & Ethical Considerations](#%E2%9A%A0%EF%B8%8F-legal--ethical-considerations)
-3. [Required Hardware](#-required-hardware)
-4. [Required Software](#%EF%B8%8F-required-software)
+1. [Overview](#project-overview)
+2. [Legal & Ethical Considerations](#legal-and-ethical-considerations)
+3. [Required Hardware](#required-hardware)
+4. [Required Software](#required-software)
 5. [Introduction to SDR](#introduction-to-sdr)
-6. [Setting Up SDR Hardware & Software](#setting-up-sdr-hardware--software)
+6. [Setting Up SDR Hardware & Software](#setting-up-sdr-hardware-and-software)
 7. [Receiving and Analyzing Signals](#receiving-and-analyzing-signals)
 8. [Transmitting (Where Legally Permitted)](#transmitting-where-legally-permitted)
 9. [Advanced Topics](#advanced-topics)
 
 ---
 
-### 📡 Project Overview
+### Project Overview
 
 This repository provides resources, guides, and experiments using **Software Defined Radios (SDR)** such as **RTL-SDR** and software tools like **SDR# (SDR Sharp)** to explore and understand wireless communications.
 
@@ -30,14 +31,14 @@ This repository provides resources, guides, and experiments using **Software Def
 - Document findings and share knowledge with others
 
 ---
-### ⚠️ Legal & Ethical Considerations
+### Legal & Ethical Considerations
 
 - Always adhere to local laws and regulations when working with SDR.
 - Do not transmit on restricted frequencies without authorization.
 - Respect privacy and ethical considerations when decoding signals.
 
 ---
-### 🔧 Required Hardware
+### Required Hardware
 
 - **[RTL-SDR Dongle](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0BMKZCKTF?th=1)** (or equivalent SDR hardware)
 - **Antennas** (for different frequency ranges):
@@ -46,7 +47,7 @@ This repository provides resources, guides, and experiments using **Software Def
 - **Computer** (Windows/Linux/macOS) with USB support
 
 ---
-###  🖥️ Required Software
+###  Required Software
 
 - **[SDR Sharp](https://airspy.com/download/)** (Windows-based SDR software)
 - **[GNU Radio](https://www.gnuradio.org/)** (for advanced signal processing)
