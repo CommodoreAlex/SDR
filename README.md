@@ -117,12 +117,10 @@ Learn more in [ADVANCED.md](advanced.md).
 	
 4. **Great Scott Gadgets HackRF Lesson's by Michael Ossmann:**
 	This instructional set of 11 lessons are very comprehensive, covering an entire outline of tactics, techniques, and procedures relating to SDRs and digital signals processing.
-
 	[Watch the video here](https://www.youtube.com/watch?v=BeeSN14JUYU&list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
 
 6. **DRAGON OS FOCAL - The Software Defined Radio Toolbox:**
 	This video by Tech Minds presents Dragon OS Focal, an operating system that is configured to be an asset to your SDR and digital signals processing research. This operating system packs up many relevant tools for ease of use in one place.
-
 	[Watch the video here](https://www.youtube.com/watch?v=lTBtlGGf5KE)
 
 Feel free to explore more insightful lectures and tutorials for free on YouTube to deepen your understanding and stay inspired!
