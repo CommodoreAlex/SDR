@@ -7,7 +7,7 @@ This project is designed as a learning experience for myself and others interest
 ## **Table of Contents**
 
 1. [Overview](#project-overview)
-2. [Legal & Ethical Considerations](#legal-&-ethical-considerations)
+2. [Legal & Ethical Considerations](#legal-and-ethical-considerations)
 3. [Required Hardware](#required-hardware)
 4. [Required Software](#required-software)
 5. [Introduction to SDR](#introduction-to-sdr)
@@ -31,7 +31,7 @@ This repository provides resources, guides, and experiments using **Software Def
 - Document findings and share knowledge with others
 
 ---
-### Legal & Ethical Considerations
+### Legal and Ethical Considerations
 
 - Always adhere to local laws and regulations when working with SDR.
 - Do not transmit on restricted frequencies without authorization.
