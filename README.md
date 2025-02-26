@@ -35,6 +35,7 @@ This repository provides resources, guides, and experiments using **Software Def
 - Always adhere to local laws and regulations when working with SDR.
 - Do not transmit on restricted frequencies without authorization.
 - Respect privacy and ethical considerations when decoding signals.
+- Do not attempt to decrypt any encrypted data received, unless given explicit permission to do so by the transmitter to avoid potential legal and LIKELY consequences. 
 
 ---
 ### Required Hardware
