@@ -3,7 +3,6 @@
 This project is designed as a learning experience for myself and others interested in working with SDR hardware and software tools to send, receive, and analyze wireless communication signals.
 
 ---
-
 ## **Table of Contents**
 
 1. [Overview](#project-overview)
@@ -15,9 +14,9 @@ This project is designed as a learning experience for myself and others interest
 7. [Receiving and Analyzing Signals](#receiving-and-analyzing-signals)
 8. [Transmitting (Where Legally Permitted)](#transmitting-where-legally-permitted)
 9. [Advanced Topics](#advanced-topics)
+10. [Additional Learning Resources and Inspiration](#additional-learning-resources-and-inspiration)
 
 ---
-
 ### Project Overview
 
 This repository provides resources, guides, and experiments using **Software Defined Radios (SDR)** such as **RTL-SDR** and software tools like **SDR# (SDR Sharp)** to explore and understand wireless communications.
@@ -61,12 +60,16 @@ This repository provides resources, guides, and experiments using **Software Def
 - **[What is SDR?](https://en.wikipedia.org/wiki/Software-defined_radio) How does it work?**
 - **[Understanding frequency bands](https://en.wikipedia.org/wiki/Frequency_allocation) and [modulation](https://en.wikipedia.org/wiki/Modulation)**
 
+Learn more in [INTRODUCTION.md](introduction.md).
+
 ---
 ### Setting Up SDR Hardware & Software
 
 - Installing drivers and setting up RTL-SDR
 - Configuring SDR Sharp for first reception
 - Exploring SDR signal visualization
+
+Learn more in [SETTING-UP.md](setting-up.md).
 
 ---
 ### Receiving and Analyzing Signals
@@ -76,12 +79,16 @@ This repository provides resources, guides, and experiments using **Software Def
 - NOAA Weather Satellite decoding
 - **[Digital modes: APRS](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System), [POCSAG](https://en.wikipedia.org/wiki/POCSAG)**
 
+Learn more in [RECEIVING.md](receiving.md).
+
 ---
 ### Transmitting (Where Legally Permitted)
 
 - Basics of SDR-based transmission
 - **[Licensing requirements and regulations](https://en.wikipedia.org/wiki/Federal_Communications_Commission)** (for U.S. users)
 - Using HackRF / LimeSDR for transmission experiments
+
+Learn more in [TRANSMITTING.md](transmitting.md).
 
 ---
 ### Advanced Topics
@@ -90,4 +97,23 @@ This repository provides resources, guides, and experiments using **Software Def
 - **[Using GNU Radio for signal processing](https://en.wikipedia.org/wiki/GNU_Radio)**
 - Security implications of SDR
 
+Learn more in [ADVANCED.md](advanced.md).
+
 ---
+## Additional Learning Resources and Inspiration
+
+1. **Software Defined Radios Overview:**  
+    Explore this insightful video by Random Teq, which provides an in-depth explanation of Software Defined Radios (SDRs) and visualizes many of the concepts discussed in this repository.  
+    [Watch the video here](https://www.youtube.com/watch?v=3PIi_BFulzA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=1)
+    
+2. **Engaging Lecture from BSides Cape Town:**  
+    A memorable and engaging lecture by Gerard de Jong from BSides Cape Town, which stands out not only for its humor but also for making complex content accessible. This lecture is one of the key resources that influenced this repository’s approach.  
+    [Watch the video here](https://www.youtube.com/watch?v=gMwciWchH3Q&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=2)
+    
+3. **Comprehensive Guide to SDR Hardware and Software:**  
+    This informative video by Tech Minds covers a variety of hardware, receiver add-ons, antenna add-ons, and software that complement the SDR concepts explored in this repository.  
+    [Watch the video here](https://www.youtube.com/watch?v=nB6XQSEFwVA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=3)
+
+Feel free to explore more insightful lectures and tutorials for free on YouTube to deepen your understanding and stay inspired!
+
+----
