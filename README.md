@@ -5,16 +5,12 @@ This project is designed as a learning experience for myself and others interest
 ---
 ## **Table of Contents**
 
-1. [Overview](#project-overview)
-2. [Legal & Ethical Considerations](#legal-and-ethical-considerations)
-3. [Required Hardware](#required-hardware)
-4. [Required Software](#required-software)
-5. [Introduction to SDR](#introduction-to-sdr)
-6. [Setting Up SDR Hardware & Software](#setting-up-sdr-hardware-and-software)
-7. [Receiving and Analyzing Signals](#receiving-and-analyzing-signals)
-8. [Transmitting (Where Legally Permitted)](#transmitting-where-legally-permitted)
-9. [Advanced Topics](#advanced-topics)
-10. [Additional Learning Resources and Inspiration](#additional-learning-resources-and-inspiration)
+1. [Introduction to SDR](introduction.md)
+2. [Setting Up SDR Hardware & Software](setting-up.md)
+3. [Receiving and Analyzing Signals](receiving.md)
+4. [Transmitting (Where Legally Permitted)](transmitting.md)
+5. [Advanced Topics](advanced.md)
+6. [Additional Learning Resources and Inspiration](#additional-learning-resources-and-inspiration)
 
 ---
 ### Project Overview
