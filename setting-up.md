@@ -118,3 +118,5 @@ To begin with SDR, you'll need the following hardware components:
 - Experiment with different **modulation types** (AM, FM, SSB, etc.) to hear various signals.
 
 For a streamlined SDR setup, **DragonOS** is highly recommended, as it comes pre-installed with SDR tools like **GQRX, CubicSDR, GNURadio**, and more.
+
+---
