@@ -17,6 +17,8 @@ Reverse engineering signals involves analyzing unknown radio frequency transmiss
 ### Demonstration:
 An amazing video resource for reverse engineering with SDR, including a live demo by Paul Clark from Black Hills Information Security: [View Video Here](https://www.youtube.com/watch?v=hT_tu1CzJv4)
 
+---
+
 ## Using GNU Radio for Signal Processing
 
 GNU Radio is a powerful open-source toolkit for building software-defined radio applications. It allows for the creation of custom signal processing chains using graphical blocks or Python scripting.
@@ -37,14 +39,17 @@ GNU Radio is a powerful open-source toolkit for building software-defined radio 
 
 Video resource for building out a GNU Radio flowgraph to receive signals with your device, from Great Scott Gadgets:
 [View Video Here](https://www.youtube.com/watch?v=BeeSN14JUYU)
+
+---
+
 ## Security Implications of SDR
 
-SDR technology presents both opportunities and risks in the realm of cybersecurity and wireless communications. Understanding these risks is crucial for ethical and legal use.
+SDR technology presents both opportunities and risks in cybersecurity and wireless communications. Understanding these risks is crucial for ethical and legal use.
 
 ### Potential Security Risks
 
-- **Eavesdropping on Unencrypted Communications:** SDR can intercept unsecured transmissions such as analog radio, pagers, and some legacy digital systems- but intercepting encrypted communications without permission is illegal.
-- **Replay and Spoofing Attacks:** SDR can be used to capture and replay RF signals to impersonate legitimate devices (e.g., key fobs, access cards) which is illegal unless authorized as a penetration tester taking part in a physical assessment.
+- **Eavesdropping on Unencrypted Communications:** SDR can intercept unsecured transmissions such as analog radio, pagers, and some legacy digital systems—but intercepting encrypted communications without permission is illegal.
+- **Replay and Spoofing Attacks:** SDR can be used to capture and replay RF signals to impersonate legitimate devices (e.g., key fobs, access cards), which is illegal unless authorized as a penetration tester taking part in a physical assessment.
 - **Wireless Protocol Exploitation:** Weaknesses in proprietary or poorly implemented security protocols can be exploited using SDR-based tools, but this must be done with permission.
 
 ### Ethical Considerations
@@ -53,5 +58,8 @@ SDR technology presents both opportunities and risks in the realm of cybersecuri
 - **Responsible Research:** Use SDR for educational and research purposes without violating privacy or security laws.
 - **Ethical Hacking:** Security professionals can use SDR to identify and mitigate wireless security threats in a controlled, lawful manner.
 
----
+### Next Steps for Experimentation
 
+For those interested in further exploring SDR and its security implications, tools like the **Flipper Zero** or **Yard Stick One** are excellent for hands-on experimentation. These tools allow for testing and exploiting wireless protocols in a controlled, ethical manner. They can interact with RFID, Bluetooth, and other wireless protocols, making them ideal for penetration testing and learning about wireless security.
+
+---
