@@ -10,7 +10,6 @@ This project is designed as a learning experience for myself and others interest
 3. [Receiving and Analyzing Signals](receiving.md)
 4. [Transmitting (Where Legally Permitted)](transmitting.md)
 5. [Advanced Topics](advanced.md)
-6. [Additional Learning Resources and Inspiration](#additional-learning-resources-and-inspiration)
 
 ---
 ### Project Overview
