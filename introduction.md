@@ -54,6 +54,8 @@ For the project, the following components are required to receive and capture si
 - **[Bingfu VHF UHF Ham Radio Antenna](https://www.amazon.com/dp/B07X2LJ4HB?ref=ppx_yo2ov_dt_b_fed_asin_title)**
 - **[4PCS SMA to BNC Coaxial Adapters](https://www.amazon.com/dp/B091C5Y8T7?ref=ppx_yo2ov_dt_b_fed_asin_title)**
 
+![Screenshot 2025-02-27 122139](https://github.com/user-attachments/assets/2812ead9-64bc-497b-bd4e-46dfa2a03f04)
+
 These components together are essential for receiving signals, as the **RTL-SDR** allows the radio signals to be processed by software, while the antenna and adapters provide the necessary hardware setup. The total cost for the **RTL-SDR**, **Bingfu VHF UHF Ham Radio Antenna**, and **4PCS SMA to BNC Coaxial Adapters** is **$54.16** (excluding shipping).
 
 ---
