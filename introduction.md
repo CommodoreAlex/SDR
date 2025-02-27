@@ -33,6 +33,7 @@ A **frequency band** is a specific range of frequencies allocated for different 
 - **Wi-Fi**: 2.4 GHz & 5 GHz
 
 Learn more: [Frequency Allocation](https://en.wikipedia.org/wiki/Frequency_allocation) and for Wi-Fi hacking: [Wi-Fi Penetration Testing](https://www.offsec.com/courses/pen-210/)
+
 Table of Frequency Allocations Chart from the [Federal Communications Commissions:](https://www.fcc.gov/engineering-technology/policy-and-rules-division/radio-spectrum-allocation/general/table-frequency)
 ### Modulation Techniques
 
