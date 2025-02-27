@@ -60,6 +60,9 @@ This repository provides resources, guides, and experiments using **Software Def
 
 - **[What is SDR?](https://en.wikipedia.org/wiki/Software-defined_radio) How does it work?**
 - **[Understanding frequency bands](https://en.wikipedia.org/wiki/Frequency_allocation) and [modulation](https://en.wikipedia.org/wiki/Modulation)**
+- Key components of an SDR setup (RTL-SDR, antennas, adapters)
+- Cost breakdown of your SDR components
+- Signal strength concepts (modulation techniques, decibels, SNR)
 
 Learn more in [INTRODUCTION.md](introduction.md).
 
