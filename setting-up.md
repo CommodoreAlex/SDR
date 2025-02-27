@@ -10,7 +10,7 @@ For the best SDR experience, consider using an SDR-focused Linux distribution:
 - **[Kali Linux](https://www.kali.org/)** – Includes `rtl-sdr` and other RF analysis tools.
 - **[Pentoo](https://www.pentoo.ch/)** – A security-focused distro with SDR utilities.
 
-If using Windows or macOS, follow the steps below for manual setup.
+If using Windows, follow the steps below for manual setup.
 
 ---
 
@@ -19,22 +19,18 @@ If using Windows or macOS, follow the steps below for manual setup.
 #### **Windows Users**
 
 1. **Download RTL-SDR Drivers**
-    
     - Visit the official [RTL-SDR website](https://www.rtl-sdr.com/) and download the latest drivers.
     - Extract the ZIP file to a convenient location.
 2. **Install Zadig Driver**
-    
     - Download [Zadig](https://zadig.akeo.ie/) to install the necessary USB driver.
     - Open Zadig and select `Bulk-In, Interface 0` from the dropdown menu.
     - Click `Replace Driver` and install `WinUSB`.
 
-#### **Linux/macOS Users**
+#### **Linux Users**
 
 1. **Install the `rtl-sdr` package** using package managers:
 ```bash
-sudo apt install rtl-sdr   # Debian/Ubuntu  
-brew install librtlsdr      # macOS (Homebrew)  
-
+sudo apt install rtl-sdr   # Debian/Ubuntu
 ```
 
 2. **Verify the device is recognized**
@@ -46,36 +42,39 @@ rtl_test -t
 
 ### 3. Setting Up Airspy SDR
 
-Airspy SDR devices offer higher performance compared to RTL-SDR. Here's how to set them up:
+Airspy SDR devices offer better performance compared to RTL-SDR. Here's how to set them up:
 
 #### **Windows Setup**
 
 1. Download the **Airspy drivers** from [Airspy’s website](https://airspy.com/download/).
-2. Install the drivers using **Zadig**, similar to RTL-SDR:
+2. Install the drivers using **Zadig** (same process as for RTL-SDR):
     - Open Zadig and select `Airspy` from the list.
     - Replace the driver with `WinUSB`.
 3. Install **SDR Sharp (SDR#)**:
     - Extract the files and run `install-rtlsdr.bat` to install dependencies.
 
-#### **Linux/macOS Setup**
+#### **Linux Setup (Using GNU Radio)**
 
-1. Install dependencies and the Airspy tools:
+1. **Install Dependencies and Tools**
 ```bash
-sudo apt install airspy-tools
+sudo apt install airspy-tools gnuradio # Debian/Ubuntu
 ```
 
+2. **Test the Device Connection**
 
-2. Test the device connection:
 ```bash
 airspy_info
 ```
 
-3. Use SDR software like **GQRX** or **CubicSDR** to start receiving signals.
-
+1. **Start Using GNU Radio**
+    - **GNU Radio** is a powerful open-source toolkit for signal processing. It offers an extensive range of capabilities for SDR applications.
+    - Launch **GNU Radio Companion** (GRC), which provides a graphical interface to design signal processing flowgraphs.
+    - Create a new flowgraph and use the **RTL-SDR Source** or **Airspy Source** block to start receiving signals.
+    - For more advanced configurations and visualizations, explore GNU Radio's built-in modules or add external blocks for custom needs.
 
 ---
 
-## Configuring SDR Sharp for First Reception (Windows)
+## Configuring SDR Sharp (SDR#) for First Reception (Windows)
 
 1. **Download and Install SDR#**
     - Get the latest version from [Airspy’s website](https://airspy.com/download/).
@@ -118,6 +117,4 @@ To begin with SDR, you'll need the following hardware components:
 - Adjust **gain settings** for better reception.
 - Experiment with different **modulation types** (AM, FM, SSB, etc.) to hear various signals.
 
-For a streamlined SDR setup, **DragonOS** is highly recommended as it comes pre-installed with SDR tools like **GQRX, CubicSDR, GNURadio**, and more.
-
----
+For a streamlined SDR setup, **DragonOS** is highly recommended, as it comes pre-installed with SDR tools like **GQRX, CubicSDR, GNURadio**, and more.
