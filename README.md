@@ -69,6 +69,7 @@ Learn more in [INTRODUCTION.md](introduction.md).
 ---
 ### Setting Up SDR Hardware & Software
 
+- Learn about common SDR-relevant operating systems
 - Installing drivers and setting up RTL-SDR
 - Configuring SDR Sharp for first reception
 - Exploring SDR signal visualization
