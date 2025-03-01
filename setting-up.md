@@ -46,6 +46,8 @@ Airspy SDR devices offer better performance compared to RTL-SDR. Here's how to s
 
 #### **Windows Setup**
 
+For a full video demonstration see this video: [Demonstration by Random Teq](https://www.youtube.com/watch?v=3PIi_BFulzA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG)
+
 1. Download the **Airspy drivers** from [Airspy’s website](https://airspy.com/download/).
 2. Install the drivers using **Zadig** (same process as for RTL-SDR):
     - Open Zadig and select `Airspy` from the list.
@@ -118,5 +120,3 @@ To begin with SDR, you'll need the following hardware components:
 - Experiment with different **modulation types** (AM, FM, SSB, etc.) to hear various signals.
 
 For a streamlined SDR setup, **DragonOS** is highly recommended, as it comes pre-installed with SDR tools like **GQRX, CubicSDR, GNURadio**, and more.
-
----
