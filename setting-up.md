@@ -37,9 +37,7 @@ See what the device prior to connection to a computer looks like when completely
 
 ---
 
-### Setting Up Airspy SDR SHARP
-
-#### Windows Setup
+### Windows Setup using SDR Sharp
 
 For a full video demonstration see this video: [Demonstration by Random Teq](https://www.youtube.com/watch?v=3PIi_BFulzA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG)
 
@@ -94,30 +92,68 @@ If you're intending on using BOTH, continue on the Linux side to install GNURadi
 
 #### **Linux Setup (Using GNU Radio)**
 
-1. **Install Dependencies and Tools**
+**GNU Radio** is an open-source **software-defined radio (SDR) framework** that provides a collection of signal processing blocks for implementing radio systems. It allows users to design, simulate, and deploy real-world wireless communication applications using **software instead of dedicated hardware**.
+
+ **Key Features:**
+- **Graphical Interface (GRC):** GNU Radio Companion (GRC) provides a drag-and-drop interface for building SDR applications without coding.
+- **Python & C++ Support:** You can develop signal processing applications programmatically in Python or C++.
+- **Wide Hardware Support:** Works with SDR devices like **RTL-SDR, HackRF, USRP, BladeRF, Airspy**, and more.
+- **Real-time Signal Processing:** Used for radio communications, radar, satellite signals, and even security research.
+- **Extensible & Modular:** Includes built-in DSP (digital signal processing) blocks, but you can create custom ones.
+
+ **Common Use Cases:**
+- Signal analysis and demodulation
+- Wireless protocol development (AM/FM, GSM, LTE, etc.)
+- Spectrum monitoring and radio astronomy
+- Amateur radio experiments
+- Reverse engineering wireless signals
+
+**Install Dependencies and Tools [Wiki for GNURadio](https://wiki.gnuradio.org/index.php/InstallingGR)**
 ```bash
-sudo apt install airspy-tools gnuradio # Debian/Ubuntu
+sudo apt-get update
+sudo apt-get install gnuradio
 ```
 
-1. **Test the Device Connection**
-
+You can start GNU Radio from the command line with:
 ```bash
-airspy_info
+gnuradio-companion
 ```
 
-1. **Start Using GNU Radio**
-    - **GNU Radio** is a powerful open-source toolkit for signal processing. It offers an extensive range of capabilities for SDR applications.
-    - Launch **GNU Radio Companion** (GRC), which provides a graphical interface to design signal processing flowgraphs.
-    - Create a new flowgraph and use the **RTL-SDR Source** or **Airspy Source** block to start receiving signals.
-    - For more advanced configurations and visualizations, explore GNU Radio's built-in modules or add external blocks for custom needs.
+This is the application we'll be using for the Linux side of receiving information with these SDRs:
 
+![image](https://github.com/user-attachments/assets/21cef109-7a85-46b2-9a0d-46a70a75f35b)
+
+
+**Test the Device Connection** with `rtl_test`:
+```bash
+sudo apt install rtl-sdr -y
+rtl_test
+```
+
+When you use **`rtl_test`** with **GNU Radio**, it serves as a utility to gather and display information about the connected **RTL-SDR** device. Essentially, it helps you verify that the **RTL-SDR hardware** is correctly recognized and provides key details that may be useful for your radio system configuration in GNU Radio.
+
+**What `rtl_test` Does in the GNU Radio Context:**
+1. **Detects RTL-SDR Devices:**
+    - It checks if your RTL-SDR device is connected and accessible by the system.
+2. **Displays Hardware Information:**
+    - Lists important data such as:
+        - **Model** (e.g., RTL-SDR v3)
+        - **Serial number** (if available)
+3. **Helpful for Troubleshooting:**
+    - If your RTL-SDR device isn't behaving as expected in GNU Radio, running `rtl_test` gives you quick feedback to ensure it's properly connected and detected by your system. This helps confirm if there are any issues with the device or the drivers.
+
+**How It Relates to GNU Radio:**
+- After confirming the device's status via `rtl_test`, you can confidently use it within **GNU Radio** for signal processing tasks. The blocks within GNU Radio (such as the **RTL-SDR source block**) will rely on this confirmation to interact with the hardware, enabling you to process SDR signals in real time.
+
+Running `rtl_test` should give an output like:
+```bash
+Found 1 device(s):
+  0: Realtek RTL2838UHIDIR (USB)
+     - Sample Rate Range: 1.024 MHz to 3.2 MHz
+     - Serial Number: 00000001
+```
+
+This confirms that the RTL-SDR device is ready for use in GNU Radio.
 
 ---
 
-## Exploring SDR Signal Visualization
-
-- Use the **waterfall display** to identify signal patterns and frequencies.
-- Adjust **gain settings** for better reception.
-- Experiment with different **modulation types** (AM, FM, SSB, etc.) to hear various signals.
-
-For a streamlined SDR setup, **DragonOS** is highly recommended, as it comes pre-installed with SDR tools like **GQRX, CubicSDR, GNURadio**, and more.
