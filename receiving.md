@@ -54,5 +54,77 @@ https://github.com/user-attachments/assets/aa65e024-1be1-41f7-9887-4f509ab55299
 
 ---
 
+## ## **Aircraft Tracking with ADS-B on Kali Linux**
+
+ **Step-by-Step Guide for Setting Up ADS-B Reception:**
+
+In Kali Linux, we will use **dump1090**, which is a popular software to decode ADS-B signals. We will retrieve this from the GitHub page of the tool creator directly [GitHub](https://github.com/flightaware/dump1090):
+```bash
+git clone https://github.com/flightaware/dump1090.git
+```
+
+This is what you will receive when you clone that Git repo:
+
+![image](https://github.com/user-attachments/assets/35b95a42-c168-4561-a76e-41ce003e8f67)
+
+
+You should be able to build the installation locally by typing and submitting `make` in the terminal.
+
+Then you can query the tool for help in order to see all switches:
+```bash
+┌──(root㉿kali)-[/home/kali/dump1090]
+└─# ./dump1090 --help 
+-----------------------------------------------------------------------------
+| dump1090 ModeS Receiver                               dump1090-fa unknown |
+| build options:                                                            |
+-----------------------------------------------------------------------------
+--device-type <type>     Select SDR type (default: none)
+
+      ifile-specific options (use with --ifile)
+
+--ifile <path>           read samples from given file ('-' for stdin)
+--iformat <type>         set sample format (UC8, SC16, SC16Q11)
+--throttle               process samples at the original capture speed
+...
+```
+
+
+Now that **dump1090** is installed, you can start listening to **1090 MHz**, the frequency used by aircraft transmitting ADS-B signals. Tune your RTL-SDR to 1090 MHz (ADS-B Frequency).
+
+1. **Connect your RTL-SDR** device to your Kali Linux machine.
+
+2. Run **dump1090** to begin receiving and decoding ADS-B signals:
+```bash
+dump1090 --device-type rtl --gain -10 --lat <latitude> --lon <longitude> --interactive # You can omit latitude and longtitude
+```
+
+Explaining the command line arguments:
+- **`--device-type rtl`**: Tells **dump1090** to use your RTL-SDR device.
+- **`--gain -10`**: Sets the gain to a default value (you can adjust it if necessary).
+- **`--lat <latitude>` and `--lon <longitude>`**: Sets your location to enhance accuracy (optional).
+- **`--interactive`**: Opens an interactive mode that shows aircraft data in your terminal.
+
+3. If you want to view the aircraft on a map in your browse locally, use the following command to enable a web interface to reach at your localhost with port 8080:
+```bash
+dump1090 --net --net-http-port 8080 --interactive
+```
+
+Once **dump1090** is running, you'll see a display with real-time aircraft data. The data includes:
+- **Aircraft positions** (latitude and longitude).
+- **Flight details** such as altitude, speed, and heading.
+- A **live feed of aircraft** near you.
+- The data is continuously updated, and if you are using the web interface, you'll see a real-time map.
+
+You should be able to navigate to `http://localhost/dump1090/gmap.html` to see:
+
+![image](https://github.com/user-attachments/assets/9d6ba3d4-7b86-420a-b6bb-a6a626cc4e7d)
+
+
+Now you should have been able to successfully set up **ADS-B reception** on **Kali Linux** using **RTL-SDR**. You can now track aircraft in real-time, decode ADS-B signals, and visualize them on a map using **dump1090** or **Virtual Radar Server**.
+
+This setup is ideal for beginners exploring software-defined radio (SDR) and aircraft tracking. As you gain more experience, you can experiment with additional configurations and features.
+
+
+---
 
 
