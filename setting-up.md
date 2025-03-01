@@ -49,6 +49,9 @@ Airspy SDR devices offer better performance compared to RTL-SDR. Here's how to s
 For a full video demonstration see this video: [Demonstration by Random Teq](https://www.youtube.com/watch?v=3PIi_BFulzA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG)
 
 1. Download the **Airspy drivers** from [Airspy’s website](https://airspy.com/download/).
+
+![image](https://github.com/user-attachments/assets/b25232d9-8e97-468a-8b63-fad3716ee966)
+
 2. Install the drivers using **Zadig** (same process as for RTL-SDR):
     - Open Zadig and select `Airspy` from the list.
     - Replace the driver with `WinUSB`.
