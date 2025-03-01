@@ -62,9 +62,7 @@ https://github.com/user-attachments/assets/aa65e024-1be1-41f7-9887-4f509ab55299
 
 ---
 
-## ## **Aircraft Tracking with ADS-B on Kali Linux**
-
- **Step-by-Step Guide for Setting Up ADS-B Reception:**
+## **Aircraft Tracking with ADS-B on Kali Linux**
 
 In Kali Linux, we will use **dump1090**, which is a popular software to decode ADS-B signals. We will retrieve this from the GitHub page of the tool creator directly [GitHub](https://github.com/flightaware/dump1090):
 ```bash
