@@ -1,4 +1,12 @@
-# Receiving and Analyzing Signals
+# Table of Contents
+
+1. [Legal Considerations for Signal Reception](#legal-considerations-for-signal-reception)
+    - Can Listen To
+    - Cannot Legally Listen To
+2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
+3. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
+
+# Legal Considerations for Signal Reception
 
 In this section, we will explore how to use an RTL-SDR to receive and analyze various types of signals. Here's a minimal breakdown of the bands your **RTL-SDR** can and **cannot** legally listen to:
 
