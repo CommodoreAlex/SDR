@@ -111,7 +111,7 @@ If you're intending on using BOTH, continue on the Linux side to install GNURadi
 **Install Dependencies and Tools [Wiki for GNURadio](https://wiki.gnuradio.org/index.php/InstallingGR)**
 ```bash
 sudo apt-get update
-sudo apt-get install gnuradio
+sudo apt-get install gnuradio gr-osmosdr # extra dependencies
 ```
 
 You can start GNU Radio from the command line with:
