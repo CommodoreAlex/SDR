@@ -146,12 +146,8 @@ When you use **`rtl_test`** with **GNU Radio**, it serves as a utility to gather
 - After confirming the device's status via `rtl_test`, you can confidently use it within **GNU Radio** for signal processing tasks. The blocks within GNU Radio (such as the **RTL-SDR source block**) will rely on this confirmation to interact with the hardware, enabling you to process SDR signals in real time.
 
 Running `rtl_test` should give an output like:
-```bash
-Found 1 device(s):
-  0: Realtek RTL2838UHIDIR (USB)
-     - Sample Rate Range: 1.024 MHz to 3.2 MHz
-     - Serial Number: 00000001
-```
+
+![image](https://github.com/user-attachments/assets/4d5dbb95-497c-4070-902a-595161342438)
 
 This confirms that the RTL-SDR device is ready for use in GNU Radio.
 
