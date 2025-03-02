@@ -6,7 +6,9 @@
 2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
 3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation)
 4. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
-5. [Receiving and Decoding NOAA Weather Satellites, APRS, and POCSAG using SDRSharp](Receiving-and-Decoding-NOAA-Weather-Satellites,-APRS,-and-POCSAG-using-SDRSharp)
+5. [NOAA Weather Satellites (APT) Decoding](NOAA-Weather-Satellites-(APT)-Decoding)\
+6. [APRS (Automatic Packet Reporting System) Decoding](APRS-(Automatic-Packet-Reporting-System)-Decoding)]
+7. [POCSAG-(Pager)-Decoding](POCSAG-(Pager)-Decoding)
 
 # Legal Considerations for Signal Reception
 
@@ -278,24 +280,8 @@ This setup is ideal for beginners exploring software-defined radio (SDR) and air
 
 ---
 
-## Receiving and Decoding NOAA Weather Satellites, APRS, and POCSAG using SDRSharp
 
-
-This section explains how to use **SDRSharp (SDR#)** with an **RTL-SDR** or similar software-defined radio to receive and decode data and provided demonstration videos:
-- **NOAA Weather Satellites (APT)** – for weather images
-- **APRS (Automatic Packet Reporting System)** – for amateur radio location and messaging
-- **POCSAG (Pager Messages)** – for receiving pager transmissions
-
-**Resources for NOAA, APRS, POCSAG:**
-- [WXtoImg](https://wxtoimgrestored.xyz/)
-- [Direwolf APRS Software](https://github.com/wb2osz/direwolf)
-- [PDW Pager Decoder](http://www.g4hfq.co.uk/pdw/index.html)
-- [Multimon-NG](https://github.com/EliasOenal/multimon-ng)
-- [VB-Cable](https://vb-audio.com/Cable/)
-
----
-
-## **1. NOAA Weather Satellites (APT) Decoding**
+## **NOAA Weather Satellites (APT) Decoding**
 
 NOAA satellites transmit Automatic Picture Transmission (**APT**) signals at 137 MHz. These signals can be decoded into weather images.
 
@@ -303,8 +289,8 @@ See here for a video demonstration on the following task [Watch Video Here](http
 
 **Requirements**
     - **SDRSharp** (for signal reception)
-    - **WXtoImg** (for decoding weather images)
-    - **VB-Cable** (to route audio from SDR# to WXtoImg)
+    - [WXtoImg](https://wxtoimgrestored.xyz/) (for decoding weather images)
+    - [VB-Cable](https://vb-audio.com/Cable/) (to route audio from SDR# to WXtoImg)
 
 **What is VB-Cable?**
 
@@ -349,7 +335,7 @@ Receiving **NOAA Weather Satellites (APT)** transmissions **requires timing** be
 
 ---
 
-## **2. APRS (Automatic Packet Reporting System) Decoding**
+## **APRS (Automatic Packet Reporting System) Decoding**
 
 APRS is a digital communication protocol for real-time information sharing over amateur radio.
 
@@ -357,8 +343,8 @@ See here for a video demonstration on the following task [Watch Video Here](http
 
 **Requirements**
     - **SDRSharp** (to receive signals)
-    - **Direwolf** or **Multimon-NG** (for decoding APRS packets)
-    - **VB-Cable** (to route audio from SDR# to decoder)
+    - [Direwolf APRS Software](https://github.com/wb2osz/direwolf) or **Multimon-NG** (for decoding APRS packets)
+    - [VB-Cable](https://vb-audio.com/Cable/) (to route audio from SDR# to WXtoImg)
 
 **What is VB-Cable’s Role?**
 
@@ -381,7 +367,7 @@ The software will start decoding **APRS messages** (e.g., GPS locations, weather
 
 ---
 
-## **3. POCSAG (Pager) Decoding**
+## **POCSAG (Pager) Decoding**
 
 POCSAG is a digital paging protocol used in many regions to send pager messages.
 
@@ -389,8 +375,8 @@ See here for a video demonstration on the following task [Watch Video Here](http
 
 **Requirements**
     - **SDRSharp** (to receive signals)
-    - **PDW (Windows)** or **Multimon-NG (Linux)** (for decoding POCSAG)
-    - **VB-Cable** (to route audio from SDR# to decoder)
+    - [PDW Pager Decoder](http://www.g4hfq.co.uk/pdw/index.html) (Windows) or **[Multimon-NG](https://github.com/EliasOenal/multimon-ng) (Linux)** (for decoding POCSAG)
+    - [VB-Cable](https://vb-audio.com/Cable/) (to route audio from SDR# to WXtoImg)
 
 **How VB-Cable is Used**
 
@@ -408,5 +394,3 @@ VB-Cable is used to send the received POCSAG signal audio from **SDRSharp** to *
 4. The decoder will start displaying pager messages in real-time.
 
 ---
-
-
