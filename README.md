@@ -9,7 +9,6 @@ This project is designed as a learning experience for myself and others interest
 2. [Setting Up SDR Hardware & Software](setting-up.md)
 3. [Receiving and Analyzing Signals](receiving.md)
 4. [Transmitting (Where Legally Permitted)](transmitting.md)
-5. [Advanced Topics](advanced.md)
 
 ---
 ### Project Overview
@@ -89,15 +88,6 @@ Learn more in [RECEIVING.md](receiving.md).
 - Using HackRF / LimeSDR for transmission experiments
 
 Learn more in [TRANSMITTING.md](transmitting.md).
-
----
-### Advanced Topics
-
-- Reverse engineering unknown signals
-- **[Using GNU Radio for signal processing](https://en.wikipedia.org/wiki/GNU_Radio)**
-- Security implications of SDR
-
-Learn more in [ADVANCED.md](advanced.md).
 
 ---
 ## Additional Learning Resources and Inspiration
