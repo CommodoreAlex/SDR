@@ -6,6 +6,7 @@
 2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
 3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation)
 4. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
+5. [Receiving and Decoding NOAA Weather Satellites, APRS, and POCSAG using SDRSharp](Receiving-and-Decoding-NOAA-Weather-Satellites,-APRS,-and-POCSAG-using-SDRSharp)
 
 # Legal Considerations for Signal Reception
 
@@ -274,6 +275,137 @@ Now you should have been able to successfully set up **ADS-B reception** on **Ka
 
 This setup is ideal for beginners exploring software-defined radio (SDR) and aircraft tracking. As you gain more experience, you can experiment with additional configurations and features.
 
+
+---
+
+## Receiving and Decoding NOAA Weather Satellites, APRS, and POCSAG using SDRSharp
+
+
+This section explains how to use **SDRSharp (SDR#)** with an **RTL-SDR** or similar software-defined radio to receive and decode data and provided demonstration videos:
+- **NOAA Weather Satellites (APT)** – for weather images
+- **APRS (Automatic Packet Reporting System)** – for amateur radio location and messaging
+- **POCSAG (Pager Messages)** – for receiving pager transmissions
+
+**Resources for NOAA, APRS, POCSAG:**
+- [WXtoImg](https://wxtoimgrestored.xyz/)
+- [Direwolf APRS Software](https://github.com/wb2osz/direwolf)
+- [PDW Pager Decoder](http://www.g4hfq.co.uk/pdw/index.html)
+- [Multimon-NG](https://github.com/EliasOenal/multimon-ng)
+- [VB-Cable](https://vb-audio.com/Cable/)
+
+---
+
+## **1. NOAA Weather Satellites (APT) Decoding**
+
+NOAA satellites transmit Automatic Picture Transmission (**APT**) signals at 137 MHz. These signals can be decoded into weather images.
+
+See here for a video demonstration on the following task [Watch Video Here](https://www.youtube.com/watch?v=ACq0Kq5rVU4)
+
+**Requirements**
+    - **SDRSharp** (for signal reception)
+    - **WXtoImg** (for decoding weather images)
+    - **VB-Cable** (to route audio from SDR# to WXtoImg)
+
+**What is VB-Cable?**
+
+**VB-Cable** is a virtual audio cable that allows you to route audio from one application to another. In this setup, it is used to send the received NOAA APT audio from **SDRSharp** to **WXtoImg** for decoding.
+
+**Setup & Steps**:
+1. Open **SDRSharp** and configure:
+    - **Mode**: WFM (Wide FM)
+    - **Bandwidth**: 30-40 kHz
+    - **Frequency**:
+        - **NOAA 15** → 137.62 MHz
+        - **NOAA 18** → 137.91 MHz
+        - **NOAA 19** → 137.10 MHz
+    - Enable **Correct IQ** (if using RTL-SDR)
+2. Install and configure **VB-Cable**:
+    - Set SDRSharp’s audio output to **VB-Cable Input**.
+    - In WXtoImg, set the audio input to **VB-Cable Output**.
+3. In **WXtoImg**, enable **Auto Processing** and wait for a satellite pass.
+4. Once a satellite passes, WXtoImg will generate a weather image.
+
+Receiving **NOAA Weather Satellites (APT)** transmissions **requires timing** because the satellites **move in polar orbits** and are only overhead for a limited time during each pass.
+
+**How to Time a Satellite Pass**
+
+1. **Use a Satellite Tracking Tool**:
+    - Websites: [Heavens Above](https://www.heavens-above.com/), [N2YO](https://www.n2yo.com/)
+    - Software: **Gpredict** (Linux/Windows), **Orbitron**
+    - Mobile Apps: **ISS Detector**, **SatSat**
+2. **Find Your Next Pass**:
+    - Enter your **location (latitude/longitude)** into the tracker.
+    - Check for NOAA **15, 18, or 19** satellites.
+    - Look for a pass with **high elevation** (preferably 30°+ for good reception).
+3. **Be Ready at the Right Time**:
+    - Passes usually last **10-15 minutes**.
+    - Start listening **a few minutes before AOS (Acquisition of Signal)**.
+    - End when the satellite moves below the horizon (**LOS - Loss of Signal**).
+
+**Why Timing Matters**
+- The **satellite constantly moves**, so you need to track when it's **above your location**.
+- If you try to receive signals when it’s below the horizon, you won’t get anything.
+- Higher passes provide **better signal strength** and **clearer images**.
+
+---
+
+## **2. APRS (Automatic Packet Reporting System) Decoding**
+
+APRS is a digital communication protocol for real-time information sharing over amateur radio.
+
+See here for a video demonstration on the following task [Watch Video Here](https://www.youtube.com/watch?v=CfnrrJwwNU8) using RTL_FM and Multimon-ng on a Linux operating system.
+
+**Requirements**
+    - **SDRSharp** (to receive signals)
+    - **Direwolf** or **Multimon-NG** (for decoding APRS packets)
+    - **VB-Cable** (to route audio from SDR# to decoder)
+
+**What is VB-Cable’s Role?**
+
+VB-Cable acts as a bridge to transfer received APRS audio from **SDRSharp** to **Direwolf** or **Multimon-NG**, which then decode the APRS packets.
+
+Steps for an alternative method using Direwolf:
+1. Open **SDRSharp** and configure:
+    - **Mode**: NFM (Narrow FM)
+    - **Bandwidth**: 12-15 kHz
+    - **Frequency**: 144.39 MHz (North America APRS frequency)
+2. Install and configure **VB-Cable**:
+    - Set SDRSharp’s audio output to **VB-Cable Input**.
+    - In Direwolf, configure the audio input to **VB-Cable Output**.
+3. Run the following command in **Direwolf**:
+```bash
+direwolf -c sdr.conf -r 48000
+```
+
+The software will start decoding **APRS messages** (e.g., GPS locations, weather reports).
+
+---
+
+## **3. POCSAG (Pager) Decoding**
+
+POCSAG is a digital paging protocol used in many regions to send pager messages.
+
+See here for a video demonstration on the following task [Watch Video Here](https://www.youtube.com/watch?v=A2v1IIVqnZk) provided by Tech Minds to walk you through it.
+
+**Requirements**
+    - **SDRSharp** (to receive signals)
+    - **PDW (Windows)** or **Multimon-NG (Linux)** (for decoding POCSAG)
+    - **VB-Cable** (to route audio from SDR# to decoder)
+
+**How VB-Cable is Used**
+
+VB-Cable is used to send the received POCSAG signal audio from **SDRSharp** to **PDW or Multimon-NG**, which then decode the messages.
+
+**Setup & Steps**:
+1. Open **SDRSharp** and configure:
+    - **Mode**: NFM (Narrow FM)
+    - **Bandwidth**: 12.5 kHz
+    - **Frequency**: Scan **152-165 MHz** for active pager signals.
+2. Install and configure **VB-Cable**:
+    - Set SDRSharp’s audio output to **VB-Cable Input**.
+    - In PDW or Multimon-NG, configure the audio input to **VB-Cable Output**.
+3. In **PDW**, set **Signal Input** to **Soundcard** and adjust settings.
+4. The decoder will start displaying pager messages in real-time.
 
 ---
 
