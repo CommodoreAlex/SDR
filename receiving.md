@@ -201,6 +201,8 @@ Now when we execute our flowgraph we have an audio slider:
 
 ![image](https://github.com/user-attachments/assets/a2990f6b-ee39-4217-afa4-8bd454f8f7dd)
 
+As you can see, GNU Radio is quite different from tools like SDR Sharp, where everything is pre-built. In GNU Radio, you build the functionality yourself, giving you more control. While it takes more effort, this flexibility is powerful. As a next step, adding a frequency slider and an RF Gain slider would be beneficial for improving signal quality and further customizing the experience. This would allow for better tuning and a deeper understanding of how SDRs work.
+
 ---
 
 
