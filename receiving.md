@@ -4,7 +4,7 @@
     - Can Listen To
     - Cannot Legally Listen To
 2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
-3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation (more complex):](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation-(more complex):)
+3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation)
 4. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
 
 # Legal Considerations for Signal Reception
@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/aa65e024-1be1-41f7-9887-4f509ab55299
 
 ---
 
-## Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation (more complex):
+## Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation
 
 ⚠️ **Note:** Everything I am doing is configured with an RTL-SDR, which is significantly weaker than a HackRFOne device. The RTL-SDR has a more limited frequency range and lower power output, so using larger values for cutoff frequency and transition width might result in weaker signal strength or poor performance. It's important to adjust these settings according to the capabilities of your RTL-SDR hardware.
 
