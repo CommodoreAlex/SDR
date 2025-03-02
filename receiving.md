@@ -6,9 +6,9 @@
 2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
 3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation)
 4. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
-5. [NOAA Weather Satellites (APT) Decoding](NOAA-Weather-Satellites-Decoding)
-6. [APRS (Automatic Packet Reporting System) Decoding](APRS-Decoding)]
-7. [POCSAG-(Pager)-Decoding](POCSAG-Decoding)
+5. [NOAA Weather Satellites (APT) Decoding](#NOAA-Weather-Satellites-Decoding)
+6. [APRS (Automatic Packet Reporting System) Decoding](#APRS-Decoding)]
+7. [POCSAG-(Pager)-Decoding](#POCSAG-Decoding)
 
 # Legal Considerations for Signal Reception
 
