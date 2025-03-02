@@ -6,9 +6,9 @@
 2. [Configuring SDR Sharp (SDR#) for First Reception (Windows) and Capturing AM/FM Signals](#configuring-sdr-sharp-sdr-for-first-reception-windows-and-capturing-amfm-signals)
 3. [Replicating the Same Actions in SDR Sharp with GNURadio Through Flowgraph Creation](#Replicating-the-Same-Actions-in-SDR-Sharp-with-GNURadio-Through-Flowgraph-Creation)
 4. [Aircraft Tracking with ADS-B on Kali Linux](#aircraft-tracking-with-ads-b-on-kali-linux)
-5. [NOAA Weather Satellites (APT) Decoding](NOAA-Weather-Satellites-(APT)-Decoding)\
-6. [APRS (Automatic Packet Reporting System) Decoding](APRS-(Automatic-Packet-Reporting-System)-Decoding)]
-7. [POCSAG-(Pager)-Decoding](POCSAG-(Pager)-Decoding)
+5. [NOAA Weather Satellites (APT) Decoding](NOAA-Weather-Satellites-Decoding)
+6. [APRS (Automatic Packet Reporting System) Decoding](APRS-Decoding)]
+7. [POCSAG-(Pager)-Decoding](POCSAG-Decoding)
 
 # Legal Considerations for Signal Reception
 
@@ -281,7 +281,7 @@ This setup is ideal for beginners exploring software-defined radio (SDR) and air
 ---
 
 
-## **NOAA Weather Satellites (APT) Decoding**
+## **NOAA Weather Satellites Decoding**
 
 NOAA satellites transmit Automatic Picture Transmission (**APT**) signals at 137 MHz. These signals can be decoded into weather images.
 
@@ -335,9 +335,9 @@ Receiving **NOAA Weather Satellites (APT)** transmissions **requires timing** be
 
 ---
 
-## **APRS (Automatic Packet Reporting System) Decoding**
+## **APRS Decoding**
 
-APRS is a digital communication protocol for real-time information sharing over amateur radio.
+APRS (Automatic Packet Reporting System) is a digital communication protocol for real-time information sharing over amateur radio.
 
 See here for a video demonstration on the following task [Watch Video Here](https://www.youtube.com/watch?v=CfnrrJwwNU8) using RTL_FM and Multimon-ng on a Linux operating system.
 
@@ -367,9 +367,9 @@ The software will start decoding **APRS messages** (e.g., GPS locations, weather
 
 ---
 
-## **POCSAG (Pager) Decoding**
+## **POCSAG Decoding**
 
-POCSAG is a digital paging protocol used in many regions to send pager messages.
+POCSAG (Pager) is a digital paging protocol used in many regions to send pager messages.
 
 See here for a video demonstration on the following task [Watch Video Here](https://www.youtube.com/watch?v=A2v1IIVqnZk) provided by Tech Minds to walk you through it.
 
