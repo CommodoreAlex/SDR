@@ -89,21 +89,26 @@ Learn more in [TRANSMITTING.md](transmitting.md).
 ## Additional Learning Resources and Inspiration
 
 1. **Software Defined Radios Overview:**  
-    Explore this insightful video by Random Teq, which provides an in-depth explanation of Software Defined Radios (SDRs) and visualizes many of the concepts discussed in this repository.  
+    Explore this insightful video by Random Teq, which provides an in-depth explanation of Software Defined Radios (SDRs) and visualizes many of the concepts discussed in this repository.
+   
     [Watch the video here](https://www.youtube.com/watch?v=3PIi_BFulzA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=1)
     
-2. **Engaging Lecture from BSides Cape Town:**  
-    A memorable and engaging lecture by Gerard de Jong from BSides Cape Town, which stands out not only for its humor but also for making complex content accessible. This lecture is one of the key resources that influenced this repository’s approach.  
+3. **Engaging Lecture from BSides Cape Town:**  
+    A memorable and engaging lecture by Gerard de Jong from BSides Cape Town, which stands out not only for its humor but also for making complex content accessible. This lecture is one of the key resources that influenced this repository’s approach.
+   
     [Watch the video here](https://www.youtube.com/watch?v=gMwciWchH3Q&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=2)
     
-3. **Comprehensive Guide to SDR Hardware and Software:**  
-    This informative video by Tech Minds covers a variety of hardware, receiver add-ons, antenna add-ons, and software that complement the SDR concepts explored in this repository.  
+4. **Comprehensive Guide to SDR Hardware and Software:**  
+    This informative video by Tech Minds covers a variety of hardware, receiver add-ons, antenna add-ons, and software that complement the SDR concepts explored in this repository.
+   
     [Watch the video here](https://www.youtube.com/watch?v=nB6XQSEFwVA&list=PLhBFZf0L5I7rwR6-8cEr4FntgLIF6CTSG&index=3)
 
-4. **Great Scott Gadgets HackRF Lesson's by Michael Ossmann:** This instructional set of 11 lessons are very comprehensive, covering an entire outline of tactics, techniques, and procedures relating to SDRs and digital signals processing.
+5. **Great Scott Gadgets HackRF Lesson's by Michael Ossmann:** This instructional set of 11 lessons are very comprehensive, covering an entire outline of tactics, techniques, and procedures relating to SDRs and digital signals processing.
+
     [Watch the video here](https://www.youtube.com/watch?v=BeeSN14JUYU&list=PLu0BPYzTjiHru1KmPThmbY-8rRm3EWvUQ)
 
-5. **DRAGON OS FOCAL - The Software Defined Radio Toolbox:** This video by Tech Minds presents Dragon OS Focal, an operating system that is configured to be an asset to your SDR and digital signals processing research. This operating system packs up many relevant tools for ease of use in one place.
+6. **DRAGON OS FOCAL - The Software Defined Radio Toolbox:** This video by Tech Minds presents Dragon OS Focal, an operating system that is configured to be an asset to your SDR and digital signals processing research. This operating system packs up many relevant tools for ease of use in one place.
+   
     [Watch the video here](https://www.youtube.com/watch?v=lTBtlGGf5KE)
 
 Feel free to explore more insightful lectures and tutorials for free on YouTube to deepen your understanding and stay inspired!
