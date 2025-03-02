@@ -37,7 +37,20 @@ Learn more: [Frequency Allocation](https://en.wikipedia.org/wiki/Frequency_alloc
 
 ### Antennas and Their Types
 
-In SDR projects, selecting the right antenna is crucial for capturing signals across different frequencies. **Antennas** are designed to receive or transmit electromagnetic waves within specific frequency ranges. The performance of an SDR largely depends on the antenna being used. For this project, we are using the **Bingfu VHF UHF Ham Radio Antenna**, which is ideal for VHF and UHF frequencies. This antenna covers a broad range of frequencies and provides the flexibility needed for experimenting with different wireless communication systems.
+In SDR projects, selecting the right antenna is crucial for capturing signals across different frequencies. **Antennas** are designed to receive or transmit electromagnetic waves within specific frequency ranges. The performance of an SDR largely depends on the antenna being used.
+
+#### Common Antenna Types and Use Cases:
+
+1. **Dipole Antennas** – Basic, omnidirectional antennas ideal for general SDR use and broad frequency reception.
+2. **Monopole Antennas** – Compact and commonly used in mobile applications such as walkie-talkies and handheld SDR setups.
+3. **Yagi Antennas** – Directional antennas with high gain, often used for long-distance reception and satellite tracking.
+4. **Loop Antennas** – Useful for HF (shortwave) listening and signal direction finding.
+5. **Log-Periodic Antennas** – Designed for wideband applications, often used in spectrum monitoring.
+6. **Patch Antennas** – Flat antennas ideal for GPS, Wi-Fi, and satellite communications.
+7. **Discone Antennas** – Wideband antennas excellent for VHF/UHF scanning applications.
+8. **Helical Antennas** – Commonly used for satellite communications and circular polarization applications.
+
+For this project, we are using the **Bingfu VHF UHF Ham Radio Antenna**, which is ideal for VHF and UHF frequencies. This antenna covers a broad range of frequencies and provides the flexibility needed for experimenting with different wireless communication systems.
 
 The **Bingfu VHF UHF Ham Radio Antenna** supports frequencies typically used in amateur radio and wireless communications, such as:
 
@@ -50,9 +63,9 @@ We’re pairing this antenna with **4PCS SMA to BNC Coaxial Adapters** to ensure
 
 For the project, the following components are required to receive and capture signals:
 
-- **[RTL-SDR](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0BMKZCKTF)** (Software Defined Radio Receiver)
-- **[Bingfu VHF UHF Ham Radio Antenna](https://www.amazon.com/dp/B07X2LJ4HB?ref=ppx_yo2ov_dt_b_fed_asin_title)**
-- **[4PCS SMA to BNC Coaxial Adapters](https://www.amazon.com/dp/B091C5Y8T7?ref=ppx_yo2ov_dt_b_fed_asin_title)**
+- [**RTL-SDR**](https://www.amazon.com/RTL-SDR-Blog-RTL2832U-Software-Defined/dp/B0BMKZCKTF) (Software Defined Radio Receiver)
+- [**Bingfu VHF UHF Ham Radio Antenna**](https://www.amazon.com/dp/B07X2LJ4HB?ref=ppx_yo2ov_dt_b_fed_asin_title)
+- [**4PCS SMA to BNC Coaxial Adapters**](https://www.amazon.com/dp/B091C5Y8T7?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 ![Screenshot 2025-02-27 122139](https://github.com/user-attachments/assets/2812ead9-64bc-497b-bd4e-46dfa2a03f04)
 
